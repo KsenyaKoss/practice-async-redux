@@ -14,6 +14,7 @@ export const UsersPage = () => {
 
   console.log(users);
   return (
+ <>
     <ul>
       {users.map(user => (
         <li key={user.id}>
@@ -21,5 +22,6 @@ export const UsersPage = () => {
         </li>
       ))}
     </ul>
+    <Link to='add'>Add User</Link></>
   );
 };
